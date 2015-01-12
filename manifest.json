@@ -1,0 +1,32 @@
+﻿{
+  "manifest_version": 2,
+  "name": "lean",
+  "description": "lean，点击流检测工具，支持财付通站点(*.tenpay.com)的页面PV、来源统计及点击流数据检测",
+  "version": "1.0",
+  "icons":{
+    "16":"img/ico_16.png",
+    "48":"img/ico_48.png",
+    "128":"img/ico_128.png"
+    },
+  "permissions": [
+    "tabs",
+    "*://*.tenpay.com/*",
+    "webRequest"
+  ],
+  "browser_action": {
+    "default_icon": "img/ico_19.png",
+    "default_title": "点击流检测工具",
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "scripts": ["js/jquery-1.10.2.min.js","js/background.js"]
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.tenpay.com/*"],
+      "css":["css/face.css"],
+      "js": ["js/jquery-1.10.2.min.js","js/content.js","js/jquery.zclip.js"],
+      "run_at":"document_start"
+    }
+  ]
+}

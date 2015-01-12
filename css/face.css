@@ -1,0 +1,33 @@
+table,th,td,div,h2 {margin: 0;padding: 0;}
+/* 点击流数据浮层 */
+#dataCheckTool{width: 586px;position:fixed;top:38px;right:38px;background-color:#FFFFFF;border:1px solid #4A8BC2; z-index:99999;box-shadow: 0 0 2px #CCC;color:#333;cursor: move;font:12px/1.5 \5FAE\8F6F\96C5\9ED1;}
+.data-head {height: 35px;background-color: #4A8BC2;}
+.data-head h2 {margin-left:22px;font-size: 14px;line-height: 35px;color: #FFFFFF;font-weight: normal;}
+.data-head .ico-tool {display: inline-block;margin-right: 5px;width:15px;height: 14px; vertical-align: middle;background:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAOCAYAAADwikbvAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAL1JREFUeNpi+P//PwMaVgPiKUD8/D8EPIfy1dDVomuM/48fxOPSHIWkqBGIVaHiylA+DESha1ZFkrRFMpARiW2LpEYVWfNFqGAlmks+A/FhINaEipVD1V2EaQ6BCnwBYk6oIn4g7kay6TUQM0Nd8gUqFgJSeB/KOQvV6AjEH4H4J1pguUHlz0L591kYMAEbEPMxEAPQnM0Idd5rNFtxOhs5wMqhfE1oQBEMMIqjClsiUSY2kVCcPEnOGAABBgBBq56/ophwfAAAAABJRU5ErkJggg==") no-repeat;}
+.data-body {width: 542px;padding: 18px 22px;}
+.data-body p {text-align: center;}
+.data-body .data-info-error {font-weight: bold;}
+.data-body .data-hide {display: none;}
+
+.data-body tbody {height: 170px;overflow: auto;display: block;}
+.data-body td{height: 26px;text-align: left;}
+.data-body .data-line {width: 412px;}
+.data-body .data-line a {display: inline-block;max-width: 417px;text-decoration: none;color: #333;text-overflow:ellipsis;overflow:hidden; white-space:nowrap;line-height: 26px;vertical-align: middle;}
+.data-body .data-line a:hover {text-decoration: underline;color:#00A7EE;cursor: pointer;}
+.data-body .data-type {width: 80px;text-align: left;white-space:nowrap;}
+.data-body .data-opt {width: 50px;text-align: center;position: relative;}
+.data-body .btn-copy {color: #ccc;cursor: pointer;text-decoration: none;cursor: pointer;}
+.data-body .btn-copy:hover {text-decoration: underline;}
+.data-body .type-pvuv {color: #A5D16C;}
+.data-body .type-adtag {color: #FCB322;}
+.data-body .type-hot {color: #E74955;}
+
+/* 复制提示 */
+.copy-tips{position:fixed;z-index:999;bottom:50%;left:50%;margin:0 0 -20px -80px;background-color:rgba(0, 0, 0, 0.2);filter:progid:DXImageTransform.Microsoft.Gradient(startColorstr=#30000000, endColorstr=#30000000);padding:6px;}
+.copy-tips-wrap{padding:10px 20px;text-align:center;border:1px solid #F4D9A6;background-color:#FFFDEE;font-size:14px;}
+/* 重构模式提示层
+	<i class="datatips-cnt">...</i>
+ */
+/*.datatips {position: relative;}*/
+.datatips-cnt {display: inline-block;width: 12px;height: 12px;border-radius: 5px;position: absolute;top:0;left: 0;z-index: 999991;font-size: 12px;color: #FFFFFF;background-color: #04C090;line-height: 12px;font-style: normal;text-align: center;}
+.datatips-cnt-on {width: auto;height: 26px;padding: 0 8px;line-height: 26px;z-index: 999992;}

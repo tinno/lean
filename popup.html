@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>data check</title>
+<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+<style type="text/css">
+body,div,p {margin:0;padding: 0;}
+.hide {display: none !important;}
+
+.main {padding: 10px;font: 12px/1.5 \5FAE\8F6F\96C5\9ED1;}
+.func {width: 200px;}
+.func .func-line {margin: 10px;line-height: 30px;}
+.func .func-name {float: left;}
+.func .func-op {float: right;}
+.func .func-line:after {content: "";display: block;clear: both;visibility: hidden;height: 0;overflow: hidden;}
+.func .btn {display: none;width: 50px;height: 30px;text-align: center; line-height: 30px;text-decoration: none;color: #fff;background-color:#8A8A8A;}
+.func .btn-open {background-color: #569B28;}
+.func .btn-close {background-color: #8A8A8A;}
+.func .btn-work {display: inline-block;}
+.func .link {color: rgb(17, 85, 204);}
+.error-tips {width: 250px;}
+</style>
+</head>
+<body>
+<div class="main">
+	<div class="func hide">
+		<div class="func-line">
+			<p class="func-name">数据检测</p><p class="func-op"><a id="check_open" class="btn btn-open" href="#none">启动</a><a id="check_close" class="btn btn-close" href="#none">关闭</a></p>
+		</div>
+		<div class="func-line">
+			<p class="func-name">预览模式</p><p class="func-op"><a id="static_open" class="btn btn-open" href="#none">启动</a><a id="static_close" class="btn btn-close" href="#none">关闭</a></p>
+		</div>
+		<div class="func-line hide">
+			<p class="func-name">点击流筛选</p><p class="func-op"><a id="filter_set" class="link" href="#none">进入编辑</a></p>
+		</div>
+	</div>
+	<div class="error-tips hide"><p>此页面不满足数据检测站点，<br>请输入*.tenpay.com域名下的页面进行检测！</p></div>
+</div>
+<script type="text/javascript" src="js/popup.js"></script>
+</body>
+</html>
